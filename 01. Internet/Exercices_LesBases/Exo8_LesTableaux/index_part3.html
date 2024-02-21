@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Tableau des Performances Académiques</title>
+  <meta charset="UTF-8">
+  <title>Tableau des Performances Académiques</title>
+  <link rel="icon" type="image/x-icon" href="../--images/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nom</th>
-            <th>Mathématiques</th>
-            <th>Sciences</th>
-            <th>Littérature</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Alice Martin</td>
-            <td>88</td>
-            <td>92</td>
-            <td>81</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Bob Dupont</td>
-            <td>75</td>
-            <td>85</td>
-            <td>78</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Clara Legrand</td>
-            <td>95</td>
-            <td>90</td>
-            <td>92</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>David Petit</td>
-            <td>60</td>
-            <td>72</td>
-            <td>65</td>
-          </tr>
-          <tr>
-            <td colspan="5">Remarque Finale : Tous les étudiants ont montré une amélioration notable cette année.</td>
-          </tr>
-        </tbody>
-      </table>
+  <table id="part3">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Mathématiques</th>
+        <th>Sciences</th>
+        <th>Littérature</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Alice Martin</td>
+        <td>88</td>
+        <td>92</td>
+        <td>81</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bob Dupont</td>
+        <td>75</td>
+        <td>85</td>
+        <td>78</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Clara Legrand</td>
+        <td>95</td>
+        <td>90</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>David Petit</td>
+        <td>60</td>
+        <td>72</td>
+        <td>65</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <!-- Pour fusionner des lignes plutôt que des colonnes, l'attribut se nomme rowspan -->
+        <td colspan="5">Remarque Finale : Tous les étudiants ont montré une amélioration notable cette année.</td>
+      </tr>
+    </tfoot>
+  </table>
 </body>
+
 </html>
