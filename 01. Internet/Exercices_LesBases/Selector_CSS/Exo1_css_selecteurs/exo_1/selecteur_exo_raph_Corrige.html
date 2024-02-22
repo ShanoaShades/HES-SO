@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ma première page</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;    
+            }
+            
+            h1 {
+                color: red; /* définition par mot clé */
+                font-size: 2em;
+                font-style: italic;
+                border-bottom-style: solid;
+                border-bottom-width: 4px;
+                border-bottom-color: #00ffff; /* hexa */
+                border-bottom-color: rgb(200,200,200); /* code couleur en RGB */
+            }
+            
+            ul {
+                color: brown;
+            }
+            
+            li > ul { /* sélection des ul fils de ul */
+                color: green;
+            }
+            
+            body > ol > li:nth-child(1) > ol > li:nth-child(2) {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <p>Voici mon premier <strong>paragraphe</strong> en HTML.</p>
+        <!-- Un commentaire -->
+        <p>J'ai un deuxième <em>paragraphe</em> ici.</p>
+        <p>Voici une liste à puces:</p>
+        
+        <ul>
+            <li>pommes</li>
+            <li>poires</li>
+            <li>fraises
+                <ul>
+                    <li>tagada</li>
+                    <li>des bois</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <ol>
+            <li>Se réveiller
+                <ol>
+                    <li>de bonne humeur</li>
+                    <li>en pleine forme</li>
+                </ol>
+            </li>
+            <li>Se lever</li>
+            <li>S'habiller</li>
+            <li>Aller bosser</li>
+        </ol>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Date de naissance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rey</td>
+                    <td>Raphaël</td>
+                    <td>08.08.1972</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>1 pers</td>
+                    <td>1 pers</td>
+                    <td>majeur</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
