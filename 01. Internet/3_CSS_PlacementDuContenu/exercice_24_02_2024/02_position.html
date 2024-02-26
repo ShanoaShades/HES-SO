@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparaison Position Relative vs Absolute vs Fixed</title>
+    <style>
+        .conteneur {
+            position: relative; /* Nécessaire pour que .absolu se positionne par rapport à ce conteneur  */
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid navy;
+        }
+        .relatif {/**Se positionne par rapport à sa position initiale*/
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: lightcoral;
+        }
+        .absolu { /*Se positionne par rapport au premier ancêtre non static*/
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background-color: lightgreen;
+        }
+        .suivant {
+            background-color: lightgrey;
+        }
+        .fixe {
+            position: fixed; /* Reste fixe par rapport au viewport, au bas de la fenêtre */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: lightpink;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="conteneur">
+    <div class="relatif">Relatif</div>
+    <div class="absolu">Absolu</div>
+</div>
+<div class="suivant">Élément Suivant</div>
+<div class="fixe">Élément Fixe en Bas de Page</div>
+
+</body>
+</html>

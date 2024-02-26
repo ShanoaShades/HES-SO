@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple z-index</title>
+    <style>
+        .boite {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .rouge {
+            background-color: red;
+            z-index: 1;
+             /* La plus basse, sera placée sous les autres */
+        }
+        .verte {
+            background-color: green;
+            z-index: 3;
+             /* La plus haute, sera placée au-dessus des autres */
+            top: 70px; /* Décale légèrement pour voir la superposition */
+            left: 70px;
+        }
+        .bleue {
+            z-index: 2;
+            background-color: blue;
+             /* Intermédiaire, placée entre la rouge et la verte */
+            top: 60px; /* Décale légèrement pour voir la superposition */
+            left: 60px;
+        }
+        .lien-bouton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top : 250px;
+        }
+        .bouton-simple:hover {
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="boite rouge"></div>
+<div class="boite verte"></div>
+<div class="boite bleue"></div>
+
+<a href="https://developer.mozilla.org/fr/docs/Web/CSS/z-index" target="_blank" class="lien-bouton">Théorie z-index</a>
+
+</body>
+</html>

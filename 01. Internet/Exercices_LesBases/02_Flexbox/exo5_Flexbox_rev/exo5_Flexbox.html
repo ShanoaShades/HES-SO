@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Centrage Vertical Texte-Image avec Flexbox</title>
+    <style>
+        body{
+            max-width: 900px;
+            margin: auto;
+        }
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column; /* Organise les boîtes verticalement */
+            align-items: center; /* Centre les boîtes horizontalement */
+            margin: 20px;
+        }
+        
+        .flex-container {
+            display: flex;
+            /* Pas besoin de flex-direction ici -> utiliser justify-content pour le centrage */
+            width: 100%; /* Conteneur prend toute la largeur */
+            justify-content: center; /* Centre les éléments dans le conteneur */
+            margin-bottom: 20px; /* Espacement entre les boîtes */
+        }
+        
+        .text, .image {
+            flex: 1; /* Donne une flexibilité égale aux textes et images pour occuper l'espace */
+            display: flex;
+            justify-content: center; /* Centre le contenu textuel ou l'image */
+            align-items: center; /* Alignement vertical */
+        }
+        
+        /* Pour la première boîte, le texte à gauche et l'image à droite */
+        .flex-container:nth-child(odd) .text, 
+        .flex-container:nth-child(even) .image {
+            order: 1;
+        }
+        
+        .flex-container:nth-child(odd) .image, 
+        .flex-container:nth-child(even) .text {
+            order: 2;
+        }
+        
+        img {
+            max-width: 200px; 
+            max-height: auto;
+            /* Pas besoin de marges spécifiques si nous centrons tout */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-wrapper">
+        <div class="flex-container">
+            <div class="text">Ceci est du texte au-dessus d'une image.</div>
+            <div class="image"><img src="img/image.jpg" alt="Image 1"></div>
+        </div>
+        <div class="flex-container image-first">
+            <div class="image"><img src="img/image.jpg" alt="Image 2"></div>
+            <div class="text">Ceci est du texte en dessous d'une image.</div>
+        </div>
+        <!-- Ajoutez d'autres flex-containers si nécessaire -->
+    </div>
+</body>
+</html>

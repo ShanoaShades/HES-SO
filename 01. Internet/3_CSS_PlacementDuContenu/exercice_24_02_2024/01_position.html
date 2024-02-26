@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple propriété position </title>
+    <style>
+        p {
+            font-size: 16px;
+            /* Définit la taille de police pour les paragraphes */
+            border: 1px solid grey;
+            /* Ajoute une bordure autour des paragraphes pour visualiser l'espace occupé */
+            padding: 10px;
+            /* Ajoute de l'espace à l'intérieur des bordures */
+            width: 80%;
+            /* Définit la largeur des paragraphes */
+            margin-bottom: 20px;
+            /* Ajoute de l'espace entre les paragraphes */
+        }
+
+        .span-static {
+            /* Aucune règle spécifique nécessaire pour static car c'est le comportement par défaut */
+            background-color: lightcoral;
+            /* Donne une couleur de fond pour distinguer le span */
+        }
+
+        .span-relative {
+            position: relative;
+            /* Change la position en relative */
+            left: 20px;
+            /* Déplace le span de 20 pixels vers la droite */
+            top: 5px;
+            /* Déplace légèrement le span vers le bas */
+            background-color: lightgreen;
+            /* Donne une couleur de fond pour distinguer le span */
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Ceci est un paragraphe avec un <span class="span-static">span static</span> à l'intérieur. Le span se comporte
+        normalement et reste dans le flux du document.</p>
+
+    <p>Ceci est un autre paragraphe avec un <span class="span-relative">span relative</span> à l'intérieur. Ce span est
+        déplacé par rapport à sa position initiale.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+/* Applique un style au corps du document */
+body {
+    max-width: 960px; /* Définit la largeur maximale du contenu à 960px */
+    margin: auto; /* Centre le contenu horizontalement dans la fenêtre du navigateur */
+}
+
+/* Applique un style aux éléments h1 */
+h1 {
+    margin-bottom: 60px; /* Ajoute une marge en bas de 60px */
+    border-right: 10px solid blue; /* Ajoute une bordure solide bleue de 10px à droite */
+    width: 300px; /* Définit la largeur de h1 à 300px */
+}
+
+/* Applique un style aux éléments h2 */
+h2 {
+    border-left: 5px double black; /* Ajoute une bordure double noire de 5px à gauche */
+    border-bottom: 5px double black; /* Ajoute une bordure double noire de 5px en bas */
+    width: 300px; /* Définit la largeur de h2 à 300px */
+    padding-left: 20px; /* Ajoute un padding (espace intérieur) de 20px à gauche */
+}
+
+/* Applique un style aux éléments avec la classe 'petit-carre' */
+.petit-carre {
+    width: 40px; /* Définit la largeur à 40px */
+    height: 40px; /* Définit la hauteur à 40px */
+    margin: 20px; /* Ajoute une marge autour de 20px */
+    background-color: rgba(182, 205, 238, 0.753); /* Définit la couleur de fond avec une opacité */
+}
+
+/* Applique un style au deuxième dernier élément avec la classe 'petit-carre' dans son parent '.serie-carre' */
+.serie-carre > .petit-carre:nth-last-of-type(2) {
+    border: 4px solid black; /* Ajoute une bordure solide noire de 4px */
+    box-sizing: border-box; /* S'assure que la largeur et la hauteur incluent le contenu, la bordure et le padding */
+}
+
+/* Applique un style aux éléments avec la classe 'carre' */
+.carre {
+    width: 400px; /* Définit la largeur à 400px */
+    height: 400px; /* Définit la hauteur à 400px */
+    background-image: url(../img/degrade.png); /* Ajoute une image de fond */
+    /*background-size: cover;*/ 
+}
+
+/* Applique un style à tous les éléments <p> qui sont enfants directs de <div> */
+.carre > p {
+    text-align: center; /* Centre le texte horizontalement */
+    padding-top: 50%; /* Ajoute un padding en haut de 50% de la hauteur du conteneur parent */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    font-weight: bolder; /* Rend le texte plus épais que celui de l'élément parent */
+    font-size: 3em; /* Augmente la taille de la police à 3 fois la taille de base */
+}
+
+section{
+    max-width: 700px;
+}
+section>h2{
+    border:none;
+    font-size: 2em;
+    color: grey;
+}
+
+.blog-rm{
+    border-left: 10px solid darkblue;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    
+}
+.popup {
+    position: fixed; /* Fixe la <div> par rapport au viewport */
+    bottom: 0; /* Positionne la <div> au bas du viewport */
+    left: 0; /* Alignement à gauche du viewport */
+    width: 100%; /* Largeur de la <div> couvrant toute la largeur du viewport */
+    background-color: rgba(0,0,0,0.5); /* Couleur de fond semi-transparente */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte à l'intérieur de la <div> */
+    padding: 20px 0; /* Ajoute du padding au-dessus et en dessous du texte */
+}
