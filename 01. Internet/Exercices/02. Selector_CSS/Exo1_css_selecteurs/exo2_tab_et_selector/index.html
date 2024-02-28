@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 2024 : Les tableaux </title>
+  <style>
+    body {
+      max-width: 1280px;
+      margin: auto;
+    }
+
+    #tableau1 {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 50px;
+    }
+
+    #tableau1 th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #tableau1 tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #tableau2 {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #tableau2 th {
+      background-color: #FFA07A;
+    }
+
+    #tableau2 thead th {
+      background-color: #FF4500;
+      color: white;
+    }
+
+    #tableau2 tr th {
+      background-color: #FFFACD;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <table id="tableau1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Dupont</td>
+        <td>Jean</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Martin</td>
+        <td>Marie</td>
+      </tr>
+    </tbody>
+
+
+    <table id="tableau2">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Produit</th>
+          <th>Prix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Ordinateur</td>
+          <td>900€</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Smartphone</td>
+          <td>500€</td>
+        </tr>
+        <!-- Ajoutez plus de lignes selon le besoin -->
+      </tbody>
+    </table>
+
+  </table>
+</body>
+
+</html>

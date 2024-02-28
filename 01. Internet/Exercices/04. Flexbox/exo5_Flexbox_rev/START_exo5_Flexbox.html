@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Centrage Vertical Texte-Image avec Flexbox</title>
+    <style>
+        body{
+            max-width: 900px;
+            margin: auto;
+        }
+       
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            width: 100%;
+            justify-content: center; /* Je dois demander la différence entre justify content et align items. */
+            margin-bottom: 20px;
+        }
+
+        .text, .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-width: 200px; 
+            max-height: auto;
+            /* Pas besoin de marges spécifiques si nous centrons tout */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-wrapper">
+        <div class="flex-container">
+            <div class="text">Ceci est du texte au-dessus d'une image.</div>
+            <div class="image"><img src="img/image.jpg" alt="Image 1"></div>
+        </div>
+        <div class="flex-container image-first">
+            <div class="image"><img src="img/image.jpg" alt="Image 2"></div>
+            <div class="text">Ceci est du texte en dessous d'une image.</div>
+        </div>
+        <!-- Ajoutez d'autres flex-containers si nécessaire -->
+    </div>
+</body>
+</html>
