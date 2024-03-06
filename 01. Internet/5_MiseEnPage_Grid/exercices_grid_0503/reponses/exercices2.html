@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les grilles exo 1</title>
+  <style>
+    body{
+      max-width: 900px;
+      margin: 20px auto ;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .conteneur{
+      display: grid;
+      height: 90vh;
+      grid-template-rows: 1fr 5fr 5fr 1fr;
+      grid-template-areas: 
+      "nav nav nav nav"
+      "image image image txti"
+      "txts txts imgs imgs"
+      "footer footer footer footer";
+      gap: 10px;
+    }
+    .conteneur>*{
+      background-color: burlywood;
+    }
+    .navigation{
+      grid-area: nav;
+    }
+    .image{
+      grid-area: image;
+    }
+    .txt_img{
+      grid-area: txti;
+    }
+    .txt_services{
+      grid-area: txts;
+    }
+    .img_services{
+      grid-area: imgs;
+    }
+    .footer{
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <div class="conteneur">
+
+    <div class="navigation">Navigation</div>
+
+    <div class="image">Image </div>
+    <div class="txt_img">texte contre image</div>
+
+    <div class="txt_services">Texte </div>
+    <div class="img_services">Image </div>
+
+    <div class="footer">Footer</div>
+  </div>
+
+</body>
+</html>

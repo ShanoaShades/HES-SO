@@ -1,0 +1,45 @@
+body {
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteneur {
+    display: grid;
+    height: 90vh;
+    grid-template-rows: 1fr 5fr 5fr 1fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "img img img txti"
+        "txts txts imgs imgs"
+        "foot foot foot foot";
+    gap: 10px;
+}
+
+.conteneur>* {
+    background-color: burlywood;
+}
+
+.navigation {
+    grid-area: nav;
+}
+
+.image {
+    grid-area: img;
+}
+
+.txt_img {
+    grid-area: txti;
+}
+
+.txt_services {
+    grid-area: txts;
+}
+
+.img_services {
+    grid-area: imgs;
+}
+
+.footer {
+    grid-area: foot;
+}

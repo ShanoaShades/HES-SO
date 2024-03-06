@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les grilles exo 1</title>
+  <style>
+    body{
+      max-width: 900px;
+      margin: 20px auto ;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .grille1{
+      width: 600px;
+      height: 600px;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 20px;
+    }
+    .grille1>div{
+      background-color: aqua;
+    }
+    .grille2{
+      display: grid;
+      height: 200px;
+      margin: 50px auto;
+      grid-template-columns: auto auto auto auto 3fr 2fr 1fr;
+      gap:5px;
+    }
+    .grille2>div{
+      background-color: cadetblue;
+    }
+    .grille3{
+      display: grid;
+      height: 400px;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 1fr 3fr 1fr;
+      gap: 5px;
+      margin-bottom: 60px;
+    }
+    .grille3>div{
+      background-color: burlywood;
+    }
+    .grille4{
+      display: grid;
+      background-color:burlywood;
+      height: 200px;
+      width: 200px;
+      grid-template-columns: auto auto auto;
+      gap: 30px 10px;
+      margin-bottom: 60px;
+    }
+    .grille4>div{
+      background-color: cadetblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="grille1">
+    <div>item 1</div>
+    <div>item 2</div>
+    <div>item 3</div>
+    <div>item 4</div>
+    <div>item 5</div>
+    <div>item 6</div>
+    <div>item 7</div>
+    <div>item 8</div>
+    <div>item 9</div>
+    <div>item 10</div>
+    <div>item 11</div>
+    <div>item 12</div>
+    <div>item 13</div>
+    <div>item 14</div>
+    <div>item 15</div>
+    <div>item 16</div>
+  </div>
+
+  <div class="grille2">
+    <div>item 1</div>
+    <div>item 2</div>
+    <div>item 3</div>
+    <div>item 4</div>
+    <div>item 5</div>
+    <div>item 6</div>
+    <div>item 7</div>
+  </div>
+
+  <div class="grille3">
+    <div>item 1</div>
+    <div>item 2</div>
+    <div>item 3</div>
+    <div>item 4</div>
+    <div>item 5</div>
+    <div>item 6</div>
+    <div>item 7</div>
+    <div>item 8</div>
+    <div>item 9</div>
+  </div>
+
+  <div class="grille4">
+    <div>item 1</div>
+    <div>item 2</div>
+    <div>item 3</div>
+    <div>item 4</div>
+    <div>item 5</div>
+    <div>item 6</div>
+  </div>
+  
+</body>
+</html>

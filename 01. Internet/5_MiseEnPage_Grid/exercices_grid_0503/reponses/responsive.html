@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <style>
+
+       body{
+        max-width: 950px;
+        margin: auto;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       .container{
+        min-height: 90vh;
+        display: grid;
+        grid-template-rows: 1fr 3fr 8fr 1fr;
+        grid-template-areas: 
+        "nav nav nav"
+        "ban ban ban"
+        "main main main"
+        "footer footer footer";
+        gap: 20px;
+       }
+       
+       .container > *{
+        background-color: burlywood;
+       }
+       nav{
+        grid-area: nav;
+       }
+       .ban{
+        grid-area: ban;
+       }
+       main{
+        grid-area: main;
+       }
+       footer{
+        grid-area: footer;
+        display: flex;
+       }
+       @media (min-width: 960px) {
+        .container {
+            grid-template-areas: 
+        "nav nav nav"
+        "ban main main"
+        "footer footer footer";
+        }
+    }
+       
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            Navigation 
+        </nav>
+        <div class="ban">
+            Banner
+        </div>
+        <main>
+            <p>Contenu principal </p>
+            <p>Contenu principal </p>
+        </main>
+        <footer>
+            Footer
+            Footer 
+            Footer
+        </footer>
+    
+    </div>
+</body>
+</html>

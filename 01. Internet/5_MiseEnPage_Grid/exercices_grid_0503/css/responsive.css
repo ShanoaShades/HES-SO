@@ -1,0 +1,21 @@
+body{
+    max-width: 950px;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .container{
+    min-height: 90vh;
+   
+   }
+   
+   h1 {
+    font-size: 3em;
+    color: pink;
+   }
+
+   @media (min-width: 960px) {
+    h1 {
+        color: blue;
+        font-size: 5em;
+    }
+}

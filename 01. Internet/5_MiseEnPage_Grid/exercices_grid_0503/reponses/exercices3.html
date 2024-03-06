@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <style>
+
+       body{
+        max-width: 950px;
+        margin: auto;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+       .container{
+        display: grid;
+        grid-template-rows: 5fr 6fr 1fr;
+       }
+
+       nav>ul{
+        display: flex;
+        justify-content: space-between;
+       }
+       li{
+        list-style-type: none;
+        background-color: lightgray;
+        border: 2px solid black;
+        padding: 20px;
+       }
+       a{        
+        color: black;
+        text-decoration: none;
+       }
+
+       main{
+        display: grid;
+        grid-template-columns: 8fr 3fr;
+        gap: 20px;
+       }
+
+    .image_c{
+        text-align: center;
+        align-self: center;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: lightgrey;
+    }
+    .ban{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <!--Navigation-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="bann">
+            <img src="img/ban.jpg" alt="banniere" width="950px" height="auto">
+        </div>
+    </header>
+  
+    
+    <!--Contenu principal-->
+    <main>
+        
+        <div>
+            <h1>Accueil</h1>
+            <h2>Ma section</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum libero minima numquam atque. Numquam expedita repellat quod eveniet consequatur ab iste aut obcaecati adipisci iusto, iure ipsa debitis ullam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestias praesentium perferendis modi nobis aperiam, maiores accusantium sit impedit exercitationem eum, illum facilis commodi libero est! Soluta numquam vel cum!</p>
+        </div>
+
+        <div class="image_c">
+            <img src="img/image.jpg" alt="Bouquet de fleurs" width="100%" height="auto">
+        </div> 
+
+    </main>
+
+
+    
+    <!--pied de page -->
+    <footer>
+        <p>Lorem ipsum</p>
+        <p>027 / 555 66 77</p>
+        <p>mail@mail.com</p>
+    </footer>
+</div>
+</body>
+</html>
