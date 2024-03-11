@@ -1,0 +1,55 @@
+body {
+    max-width: 950px;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.ban {
+    grid-area: ban;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.container {
+    min-height: 90vh;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "nav nav nav"
+        "ban ban ban"
+        "main main main"
+        "footer footer footer";
+}
+
+.container>* {
+    background-color: burlywood;
+}
+
+h1 {
+    font-size: 3em;
+    color: pink;
+}
+
+@media (min-width: 960px) {
+    h1 {
+        font-size: 5em;
+        color: blue;
+    }
+
+    .container {
+        grid-template-areas:
+        "nav nav nav"
+        "ban main main"
+        "footer footer footer";
+    }
+}
