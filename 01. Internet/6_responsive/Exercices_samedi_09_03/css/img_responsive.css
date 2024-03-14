@@ -1,0 +1,10 @@
+body {
+    margin: auto;
+    max-width: 600px;
+    padding: 1em;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}

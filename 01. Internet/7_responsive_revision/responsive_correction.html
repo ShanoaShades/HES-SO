@@ -1,0 +1,210 @@
+<!DOCTYPE>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Exo</title>
+    <meta name="viewport" content="width=500, initial-scale=1" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "main sidebar sidebar"
+                "footer footer footer";
+            grid-template-columns: 1fr 300px 300px;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+        
+        header {
+            grid-area: header;
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        main {
+            grid-area: main;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .card {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .card-content {
+            padding: 15px;
+        }
+        
+        .grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        aside {
+            grid-area: sidebar;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        
+        .nav-logo {
+            font-weight: bold;
+        }
+        
+        aside h3, aside p, aside ul, .social-links a {
+            color: #333;
+        }
+        
+        aside p, aside ul {
+            font-size: 0.9rem;
+        }
+        
+        aside ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        aside ul li {
+            margin-bottom: 10px;
+        }
+        
+        aside ul li a {
+            text-decoration: none;
+        }
+        
+        aside ul li a:hover, .social-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-links a {
+            display: block;
+            margin-bottom: 5px;
+        }
+       
+    </style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Webmaster 2023-2024 - Membres</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:SharedWithUsers msdt:dt="string">18;#Webmaster 2023-2024 - Membres</mso:SharedWithUsers>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Logo</a>
+                <div class="nav-links">
+                    <a href="#">Accueil</a>
+                    <a href="#">À propos</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </div>
+        </header>
+        <main class="main-content">
+            <section class="welcome-section">
+                <h1>Bienvenue sur notre site</h1>
+                <p>Ceci est un exemple de page web moderne utilisant des cards avec images et textes.</p>
+            </section>
+    
+            <section class="grid-section">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Image 1">
+                    <div class="card-content">
+                        <h3>Titre 1</h3>
+                        <p>Description pour l'item 1.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Image 2">
+                    <div class="card-content">
+                        <h3>Titre 2</h3>
+                        <p>Description pour l'item 2.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Image 3">
+                    <div class="card-content">
+                        <h3>Titre 3</h3>
+                        <p>Description pour l'item 3.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Image 4">
+                    <div class="card-content">
+                        <h3>Titre 4</h3>
+                        <p>Description pour l'item 4.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <h3>À propos de nous</h3>
+            <p>Bref paragraphe décrivant l'entreprise ou le but du site web.</p>
+        
+            <h3>Contact</h3>
+            <p>Adresse : Exemple de rue, 1234</p>
+            <p>Téléphone : +1 234 567 8900</p>
+            <p>Email : contact@exemple.com</p>
+        
+            <h3>Articles récents</h3>
+            <ul>
+                <li><a href="#">Titre de l'article 1</a></li>
+                <li><a href="#">Titre de l'article 2</a></li>
+                <li><a href="#">Titre de l'article 3</a></li>
+                <li><a href="#">Titre de l'article 4</a></li>
+            </ul>
+        
+            <h3>Suivez-nous</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </aside>
+        <footer>
+            Pied de Page
+        </footer>
+    </div>
+</body>
+</html>
