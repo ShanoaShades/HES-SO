@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            max-width: 600px;
+            margin: auto;
+        }
+          .box {
+            border: 2px solid blue;
+            margin-bottom: 10px;
+            padding: 5px;
+          }
+          
+          .short-text {
+            width: fit-content(150px); /* La boîte s'adapte au contenu, mais ne dépasse pas 150px */
+          }
+          
+          .long-text {
+            width: fit-content(50%); /* La boîte s'adapte au contenu, mais ne dépasse pas 50% de la largeur du conteneur */
+          }
+          
+          p {
+            white-space: nowrap; /* Empêche le texte de passer à la ligne */
+          }
+    </style>
+</head>
+<body>
+    <div class="box short-text">
+        <p>Court</p>
+      </div>
+      
+      <div class="box long-text">
+        <p>Un texte significativement plus long que le précédent.</p>
+      </div>
+             
+</body>
+</html>

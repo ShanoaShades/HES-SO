@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px repeat(auto-fill, 100px) 300px;
+            gap: 10px; /* Espace entre les colonnes */
+          }
+          
+          .grid-container > div {
+            border: 1px solid black;
+            text-align: center;
+          }
+          .grid-container1 {
+            display: grid;
+            grid-template-columns: 20px 200px repeat(auto-fill, 100px) ;
+            gap: 10px; /* Espace entre les colonnes */
+          }
+          
+          .grid-container1 > div {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div>1. 200px</div>
+        <div>2. 100px</div>
+        <div>3. 100px</div>
+        <div>2. 100px</div>
+        <div>3. 100px</div>
+        <div>2. 100px</div>
+        <div>3. 100px</div>
+        <!-- Ajoutez plus de divs ici si nécessaire -->
+        <div>N-1. 100px</div>
+        <div>N. 300px</div>
+      </div>
+      
+      <div class="grid-container1">
+        <div>1 (20px)</div>
+        <div>Colonne 1 (150px)</div>
+        <div>Colonne 2 (50px)</div>
+        <div>Colonne 3 (50px)</div>
+        <div>Colonne 2 (50px)</div>
+        <div>Colonne 3 (50px)</div>
+        <div>Colonne 4 (50px)</div>
+        <div>Colonne 2 (50px)</div>
+        <div>Colonne 3 (50px)</div>
+        <div>Colonne 4 (50px)</div>
+        <div>Colonne 2 (50px)</div>
+        <div>Colonne 3 (50px)</div>
+        <div>Colonne 4 (50px)</div>
+        <div>Colonne 2 (50px)</div>
+        <div>Colonne 3 (50px)</div>
+        <div>Colonne 4 (50px)</div>
+        <div>Colonne 2 (50px)</div>
+        <div>Colonne 3 (50px)</div>
+        <div>Colonne 4 (50px)</div>
+        <div>Colonne 2 (50px)</div>
+        <div>Colonne 3 (50px)</div>
+        <div>Colonne 4 (50px)</div>
+        <div>Colonne 2 (50px)</div>
+        <div>Colonne 3 (50px)</div>
+        <div>Colonne 4 (50px)</div>
+        <!-- Plus d'éléments ici si nécessaire -->
+      </div>
+      
+</body>
+</html>

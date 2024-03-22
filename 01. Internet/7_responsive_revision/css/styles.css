@@ -118,3 +118,20 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+        min-height: 100vh;
+    }
+}

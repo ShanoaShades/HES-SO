@@ -1,6 +1,20 @@
+:root {
+    /* Initialisation de variables */
+    --bleuRoi: #318ce7;
+    --droite: right;
+}
+
 body {
     max-width: 960px;
     margin: auto;
+}
+
+h1 {
+    color: var(--bleuRoi);
+}
+
+h1:hover {
+    color: pink;
 }
 
 nav {
